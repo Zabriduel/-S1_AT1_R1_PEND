@@ -3,13 +3,11 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(
-    120deg,
-    #ffffff 0%,
-    #e8fdf0 30%,
-    #27ae60 70%,
-    #145a32 100%
-  );
+  background: linear-gradient(120deg,
+      #ffffff 0%,
+      #e8fdf0 30%,
+      #27ae60 70%,
+      #145a32 100%);
 }
 
 .container {
@@ -76,6 +74,9 @@ form {
 .input__box {
   width: calc(50% - 10px);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .input__box input {
@@ -89,6 +90,15 @@ form {
   color: #000;
   font-weight: 600;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.input__box span {
+  position: absolute;
+  bottom: -18px;
+  left: 6px;
+  font-size: 0.75rem;
+  color: red;
+  white-space: nowrap;
 }
 
 .input__box input::placeholder {
